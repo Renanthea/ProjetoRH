@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contato</title>
+</head>
+<body>
+    <h1>Entre em contato conosco</h1>
+
+    <header>
+        <p>
+            Aqui voce pode:
+            <ol>
+                <li>Enviar Sugestões</li>
+                <li>Solicitar Orçamentos</li>
+                <li>Solicitar Visitas</li>
+                <li>Apresentar seu feedback</li>
+            </ol>
+        </p>
+        <p>
+            Sinta-se à vontade para entrar em contato
+        </p>
+    </header>
+
+    <form action="contatoOk.html" method="post">
+        <div>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome"
+                   required="required" autofocus="autofocus" />
+        </div>
+        <div>
+            <label for="telefone">Seu Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" />
+        </div>
+        <div>
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" required="required" />
+        </div>
+
+        <div>
+            <label for="assunto">Assunto:</label>
+            <textarea rows="10" cols="50" id="assunto" name="assunto"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>

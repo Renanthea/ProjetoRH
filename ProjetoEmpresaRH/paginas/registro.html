@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Registro de Candidatos</h1>
+    
+    <form action="registroOk.html" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"
+                   required="required" autofocus="autofocus"/>
+        </div>
+
+        <div>
+            <label for="data">Data Nascimento:</label>
+            <input type="date" id="data" name="data" required="required" />
+        </div>
+
+        <div>
+            <label for="sexo">Sexo:</label>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                    Masculino<br />
+                <input type="radio" id="feminino" name="sexo" value="feminino" >
+                    Feminino<br />
+
+            </fieldset>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required="required" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="required" />
+        </div>
+        <div>
+            <label for="vaga">Vaga Desejada:</label>
+            <select id="vaga" name="vaga">
+                <option value="1">Administrador Banco de Dados</option>
+                <option value="2">Analista de Sistemas</option>
+                <option value="3">Web Design</option>
+                <option value="4">Programador Java</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Enviar"/>
+
+    </form>
+
+</body>
+</html>
